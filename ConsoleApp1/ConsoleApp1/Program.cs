@@ -7,11 +7,11 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             string password = "0451";
-            int trys = 3;
+            int trys;
             string tryPassword;
             Console.WriteLine("Введите пароль");
 
-            for (int i = 0; trys > 0; trys--)
+            for (trys = 3; trys > 0; trys--)
             {
                 Console.WriteLine($"У вас осталось {trys} попыток");
                 tryPassword = Console.ReadLine();
